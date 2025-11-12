@@ -8,8 +8,8 @@
   "editor.tabSize": 4,
   "explorer.confirmDragAndDrop": false,
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "One Dark Pro Darker",
-  "workbench.iconTheme": "bearded-icons",
+  "workbench.colorTheme": "Min Dark",
+  "workbench.iconTheme": "helium-icon-theme",
 
   /* --------------------------- Perfomance related --------------------------- */
   "files.watcherExclude": {
