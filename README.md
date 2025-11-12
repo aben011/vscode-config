@@ -2,17 +2,16 @@
 This repository stores my personal, unified VS Code setup.
 
 ## Installation (Linux/MacOS)
-Clone repo into Home directory:
+Clone this repo into your home directory:
 ```bash
-git clone https://github.com/aben011/vscode-config.git $HOME
+rm -rf https://github.com/aben011/vscode-config.git "$HOME/vscode-config"
+git clone https://github.com/aben011/vscode-config.git "$HOME/vscode-config"
 ```
 
 Link to files from workspace (`.vscode` directory must exist)
 ```bash
-rm -f ./.vscode/.prettierrc && \
-rm -f ./.vscode/extensions.json && \
-rm -f ./.vscode/settings.json && \
-ln -s $HOME/vscode-config/.prettierrc ./.vscode/.prettierrc && \
-ln -s $HOME/vscode-config/extensions.json ./.vscode/extensions.json && \
-ln -s $HOME/vscode-config/settings.json ./.vscode/settings.json
+for filename in .prettierrc extensions.json README.md settings.json; do
+    rm -f ".vscode/$filename"
+    ln -s "$HOME/vscode-config/$filename" ".vscode/$filename"
+done
 ```
