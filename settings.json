@@ -115,9 +115,14 @@
 
   "black-formatter.args": ["-S", "--line-length", "100"],
 
+  "cSpell.words": [],
+
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.pruneOnFetch": true,
+
+  "prettier.configPath": ".vscode/.prettierrc",
+  "prettier.requireConfig": true,
 
   "remote.SSH.remotePlatform": {
     "*": "linux"
